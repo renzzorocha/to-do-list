@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a8e6cf; 
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grupo-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#entrada-tarefa {
+    flex: 1;
+    padding: 10px;
+}
+
+#botao-adicionar {
+    padding: 10px;
+}
+
+#lista-tarefas {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.item-tarefa.concluida .texto-tarefa {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.botao-concluir, button.botao-remover {
+    margin-left: 5px;
+}
